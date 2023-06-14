@@ -1,0 +1,64 @@
+CRITICAL - 2023-06-14 00:28:43 --> Call to undefined method App\Models\GenreModel::getGenre
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(22): CodeIgniter\Model->__call('getGenre', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 00:40:13 --> Undefined array key "nama_genre"
+in APPPATH\Views\film\semuafilm.php on line 26.
+ 1 APPPATH\Views\film\semuafilm.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_genre"', 'D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\semuafilm.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\semuafilm.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/semuafilm', [], true)
+ 5 APPPATH\Controllers\Film.php(31): view('film/semuafilm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:48:45 --> Undefined array key "Genre"
+in APPPATH\Views\film\index.php on line 53.
+ 1 APPPATH\Views\film\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Genre"', 'D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:51:28 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\film\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 3 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:52:17 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\film\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 3 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
+CRITICAL - 2023-06-14 03:52:45 --> Undefined variable $i
+in APPPATH\Views\film\index.php on line 51.
+ 1 APPPATH\Views\film\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\MI4CApp\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(25): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\MI4CApp\\public\\index.php')
