@@ -15,5 +15,9 @@ class GenreModel extends Model
    {
       return $this->findAll(); 
    }
+   public function genre($data){
+      return $this->where("genre", $data)->findAll;
+   }
 }
+
 

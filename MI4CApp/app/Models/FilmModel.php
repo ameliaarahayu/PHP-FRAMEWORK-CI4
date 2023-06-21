@@ -50,29 +50,9 @@ class FilmModel extends Model
         return $query->get()->getResultArray();
    }
 
-   public function getAllData()
-   {
-      return $this->findAll(); 
+   public function genre($data){
+    return $this->where("genre", $data)->findAll;
    }
 
-   public function getDataByID($id)
-   {
-    return $this->find($id);
-   }
-
-   public function getDataBy($data)
-   {
-    return $this->where('genre', $data)->findALL();
-   }
-
-   public function getOrderBy()
-   {
-    return $this->orderBy('created_at', 'desc')->findAll();
-   }
-
-   public function getLimit()
-   {
-    return $this->limit(5)->get()->getResultArray();
-   }
 }
 

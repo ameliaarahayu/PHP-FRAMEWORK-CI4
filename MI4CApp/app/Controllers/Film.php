@@ -31,23 +31,13 @@ class Film extends BaseController
         return view("film/semuafilm", $data);
     }
 
-    public function film_by_id()
-    {
-        dd($this->film->getDataByID(1));
+    public function genre(){
+        dd($this->film->getDataBy("action"));
     }
 
-    public function film_by_genre()
+    public function add()
     {
-        dd($this->film->getDataBy("Horor"));
+        return view("film/add");
     }
 
-    public function film_order()
-    {
-        dd($this->film->getOrderBy());
-    }
-
-    public function film_limit_five()
-    {
-        dd($this->film->getLimit());
-    }
 }

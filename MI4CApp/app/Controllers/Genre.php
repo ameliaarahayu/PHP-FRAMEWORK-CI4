@@ -27,4 +27,8 @@ class Genre extends BaseController
         $data['semuagenre'] = $this->genre->getAllData();
         return view("film/genre", $data);
     }
+    public function genre()
+    {
+        dd($this->film->getDataBy("action"));
+    }
 }
