@@ -35,7 +35,7 @@
                     <td><?= $film['nama_genre']?></td>
                     <td><?= $film['duration']?></td>
                     <td>
-                    <a href="" class="btn btn-success">Update</a>
+                    <a href="/film/update/<?= $film["id"]; ?>" class="btn btn-success">Update</a>
                     <a href="" class="btn btn-warning">Delete</a>
                     </td>
                 </tr>

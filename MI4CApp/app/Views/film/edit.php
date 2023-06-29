@@ -15,12 +15,15 @@
             </div>
         </div>
         <div class="card-body">
-        <form action="/film/store" method="POST" enctype="multipart/form-data">
+        <form action="/film/edit" method="POST" enctype="multipart/form-data">
             <div class="row">
+                
+                <input type="hidden" value="<?= $film["id"]; ?>" name="id">
                 <div class="col-md-6">
                     <label for="nama_film" class="form-label">Nama Film</label> 
-                    <input type="text" class="form-control <?= isset($errors['nama_film']) ? 
-                    'is-invalid ' : ''; ?>" id="nama_film" name="nama_film" value="<?= old('nama_film'); ?>">
+
+                    <input type="text" class="form-control <?= isset($errors['nama_film']) ? 'is-invalid ' : ''; ?>" 
+                    id="nama_film" name="nama_film" value="<?= isset($errors['nama_film']) ? old('nama_film') : $film['nama_film']; ?>">
                     <?php if (isset($errors['nama_film'])) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['nama_film'] ?>
@@ -29,8 +32,7 @@
             </div>
             <div class="col-md-6">
                 <label for="genre" class="form-label">Genre</label> 
-                <select name="id_genre" id-genre="genre" class="form-control<?= isset($errors['id_genre']) ? 
-                'is-invalid ' : ''; ?>" name="id_genre" value="<?= old('id_genre'); ?>">
+                <select name="id_genre" id-genre="genre" class="form-control<?= isset($errors['id_genre']) ? 'is-invalid ' : ''; ?>" name="id_genre" value="<?= old('id_genre'); ?>">
                     <option value="">PILIH...</option>
                     <?php foreach ($genre as $g) : ?>
                         <option value="<?=$g['id_genre']?>"><?= $g["nama_genre"]?></option>
@@ -44,8 +46,7 @@
             </div>
             <div class="col-md-6">
                 <label for="duration" class="form-label">Durasi</label>
-                <input type="text" class="form-control <?= isset($errors['duration']) ? 
-                'is-invalid ' : ''; ?>" id="duration" name="duration" value=" <?= old('duration'); ?>">
+                <input type="text" class="form-control <?= isset($errors['duration']) ? 'is-invalid ' : ''; ?>" id="duration" name="duration" value=" <?= old('duration'); ?>">
                 <?php if (isset($errors['duration'])) : ?>
                                 <div class=" invalid-feedback">
                                     <?= $errors['duration'] ?>
@@ -54,8 +55,7 @@
             </div>
             <div class="col-md-6">
                 <label for="cover" class="form-label">Cover</label>
-                <input type="file" class="form-control <?= isset($errors['cover']) ? 
-                'is-invalid' : ''; ?>" id="cover" name="cover" value="<?= old('cover'); ?>">
+                <input type="file" class="form-control <?= isset($errors['cover']) ? 'is-invalid' : ''; ?>" id="cover" name="cover" value="<?= old('cover'); ?>">
                 <?php if (isset($errors['cover'])) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['cover'] ?>
