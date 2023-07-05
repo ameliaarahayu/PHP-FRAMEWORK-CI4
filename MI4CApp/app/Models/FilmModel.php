@@ -53,6 +53,11 @@ class FilmModel extends Model
    public function genre($data){
     return $this->where("genre", $data)->findAll;
    }
+   
+   public function getDataByID($id)
+   {
+       return $this->find($id);
+   }
 
 }
 
