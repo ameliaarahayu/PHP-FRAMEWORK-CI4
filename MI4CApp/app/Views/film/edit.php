@@ -82,8 +82,6 @@
                                         </div>
                                     <?php endif; ?>
                                 </div>
-                            </div>
-
                             <div class="col-md-3">
                                 <label class="form-label">Cover Saat Ini</label>
                                 <div class="mb-2">
