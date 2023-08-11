@@ -46,7 +46,7 @@
     </div>
     <!-- tambahkan dari sini  -->
     <script>
-    function confirmDelete() {
+    function confirmDelete(id) {
         swal({
                 title: "Apakah Anda yakin?",
                 text: "setelah dihapus! data anda akan benar-benar hilang!",
@@ -57,7 +57,7 @@
             .then((willDelete) => {
                 if (willDelete) {
 
-                    window.location.href = "/film/destroy/<?= encryptUrl($film['id']) ?>";
+                    window.location.href = "/film/destroy/<?=($film['id']) ?>";
 
                 } else {
                     swal("Data tidak jadi dihapus!");

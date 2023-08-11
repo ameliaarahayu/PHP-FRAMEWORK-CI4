@@ -34,10 +34,6 @@ class Film extends BaseController
         return view("film/semuafilm", $data);
     }
 
-    public function genre(){
-        dd($this->film->getDataBy("action"));
-    }
-
     public function add()
     {
         $data['genre'] = $this->genre->getAllData(); //2
@@ -56,8 +52,8 @@ class Film extends BaseController
 
     public function destroy($id)
     {
-        $decryptedId = decryptUrl($id);
-        $this->film->delete($decryptedId);
+        //$decryptedId = decryptUrl($id);
+        $this->film->delete($id);
         session()->setFlashdata('success', 'Data berhasil dihapus.');
         return redirect()->to('/film');
     }
